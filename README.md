@@ -31,7 +31,12 @@ To use the grid component in your React application, follow these steps:
 2. Pass the Grid Config Info and Grid Data as props to the Grid component:
 ```jsx
 <TableComponent
-  config={gridConfigInfo} 
+  config={{headerData,
+            pinnable,
+            searchable,
+            sortable,
+            theme,
+            } 
   data={gridData}
 />
 ```
