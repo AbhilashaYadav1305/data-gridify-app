@@ -36,7 +36,7 @@ To use the grid component in your React application, follow these steps:
             searchable,
             sortable,
             theme,
-            } 
+            }} 
   data={gridData}
 />
 ```
