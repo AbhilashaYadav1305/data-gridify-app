@@ -59,5 +59,3 @@ Please refer to the package.json file for the specific versions of these depende
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
 ---
-
-Thank you for using the React Data Gridify App! We hope you find it useful and easy to integrate into your projects. If you have any questions or need further assistance, please don't hesitate to reach out. Happy coding!
