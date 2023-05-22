@@ -1,0 +1,42 @@
+/* Color palettes */
+:root {
+  /* Light theme colors */
+  --primary-color-light: #eeeeee;
+  --secondary-color-light: #212529;
+  --background-color-light: #f1f6f9;
+  --text-color-light: #212529;
+  --loader-color-light: #c2e9f6;
+  --day: #c2e9f6;
+
+  /* Dark theme colors */
+  --primary-color-dark: #282a3a;
+  --secondary-color-dark: #c69749;
+  --background-color-dark: #000000;
+  --text-color-dark: #e7f6f2;
+  --loader-color-dark: #c69749;
+  --night: #c69749;
+
+  --error: #b70404;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Light theme */
+.light-theme {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  /* Light theme styles */
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-light);
+  /* Dark theme styles */
+}

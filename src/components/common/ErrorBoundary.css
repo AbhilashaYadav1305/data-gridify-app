@@ -1,0 +1,18 @@
+.error-ui {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+  padding: 100px;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  height: 100%;
+  width: 100%;
+}
+
+.error-ui h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.error-ui p {
+  font-size: 16px;
+}

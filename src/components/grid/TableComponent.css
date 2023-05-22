@@ -1,0 +1,181 @@
+/* Light Theme */
+.light-theme {
+  --background-color: var(
+    --background-color-light
+  ); /* Background color for light theme */
+  --text-color: var(--text-color-light); /* Text color for light theme */
+  --loader-color: var(--loader-color-light); /* Loader color for light theme */
+  --loader-color-outline: var(
+    --primary-color-light
+  ); /* Loader outline color for light theme */
+  --border: 1px solid var(--primary-color-dark); /* Border style for light theme */
+  --pin-color: var(
+    --secondary-color-light
+  ); /* Color for pin icon in light theme */
+  --error-color: var(--background-color-light);
+}
+
+/* Dark Theme */
+.dark-theme {
+  --background-color: var(
+    --primary-color-dark
+  ); /* Background color for dark theme */
+  --text-color: var(--text-color-dark); /* Text color for dark theme */
+  --loader-color: var(--loader-color-dark); /* Loader color for dark theme */
+  --loader-color-outline: var(
+    --text-color-dark
+  ); /* Loader outline color for dark theme */
+  --border: 1px solid var(--primary-color-light); /* Border style for dark theme */
+  --pin-color: var(--primary-color-dark); /* Color for pin icon in dark theme */
+  --error-color: var(--primary-color-dark);
+}
+
+.dark-theme .table-header {
+  background-color: var(
+    --secondary-color-dark
+  ); /* Background color for table header in dark theme */
+  color: var(--text-color-dark); /* Text color for table header in dark theme */
+}
+
+.light-theme .table-header {
+  background-color: var(
+    --day
+  ); /* Background color for table header in light theme */
+  color: var(
+    --text-color-light
+  ); /* Text color for table header in light theme */
+}
+
+.diaplayFlex {
+  display: flex !important; /* Display elements in flex layout */
+  margin-top: 2%; /* Margin on top */
+  justify-content: space-between !important; /* Distribute space between elements */
+}
+
+@media (max-width: 768px) {
+  .diaplayFlex {
+    display: block; /* Change display to block on smaller screens */
+  }
+}
+
+.table-container {
+  border: var(--border); /* Border style for table container */
+  margin: 20px; /* Margin around the table container */
+  height: 50vh; /* Height of the table container */
+  width: 70vw; /* Width of the table container */
+  overflow-y: scroll; /* Enable vertical scrolling for overflowing content */
+  background-color: var(
+    --background-color
+  ); /* Background color for table container */
+  color: var(--text-color); /* Text color for table container */
+}
+
+.table-header {
+  display: flex; /* Display table header in flex layout */
+  font-weight: bold; /* Set font weight to bold for table header */
+  position: sticky !important; /* Make the table header sticky */
+  top: 0; /* Position the table header at the top */
+  z-index: 1; /* Set the z-index of the table header to be above other elements */
+  font-size: 15px; /* Font size for table header */
+}
+
+@media (max-width: 768px) {
+  .table-header {
+    width: fit-content; /* Set the width of the table header to fit its content on smaller screens */
+  }
+}
+
+.header-cell {
+  flex: 1; /* Distribute flex items equally */
+  padding: 10px; /* Padding for header cells */
+  border-right: var(--border); /* Border style for header cells */
+  flex-basis: 0; /* Set initial flex size to 0 */
+  min-width: 100px; /* Minimum width for each header cell */
+  display: grid; /* Display header cell as a grid container */
+  align-content: center; /* Align content vertically within header cell */
+}
+
+.cell {
+  flex: 1; /* Distribute flex items equally */
+  padding: 10px; /* Padding for cells */
+  border-right: var(--border); /* Border style for cells */
+  border-bottom: var(--border); /* Border style for cells */
+  flex-basis: 0; /* Set initial flex size to 0 */
+  min-width: 100px; /* Minimum width for each cell */
+  white-space: normal; /* Allow normal white space behavior */
+  word-break: break-word; /* Break words if they exceed cell width */
+}
+
+.cell-error {
+  padding: 5px;
+  color: var(--error);
+  background-color: var(--error-color);
+}
+
+.table-body {
+  margin-top: 10px; /* Margin on top of table body */
+}
+
+.row {
+  display: flex; /* Display rows in flex layout */
+  border-bottom: 1px solid #ccc; /* Border style for row bottom */
+}
+
+.scrollable-content {
+  min-height: 100%; /* Ensure the scrollable content fills the table body */
+}
+
+.loader-container {
+  display: flex; /* Display loader container in flex layout */
+  justify-content: center; /* Center loader horizontally */
+  align-items: center; /* Center loader vertically */
+  height: 50px; /* Height of loader container */
+}
+
+.heading-app {
+  margin: 0; /* Remove margin around heading */
+  padding: 10px; /* Padding for heading */
+  color: var(--text-color); /* Text color for heading */
+}
+
+.dark-theme .heading-app {
+  color: var(--secondary-color-dark); /* Text color for heading in dark theme */
+}
+
+.light-theme .heading-app {
+  color: var(
+    --secondary-color-light
+  ); /* Text color for heading in light theme */
+}
+
+.loader {
+  border: 10px solid var(--loader-color-outline); /* Border style for loader */
+  border-top: 10px solid var(--loader-color); /* Border style for loader */
+  border-radius: 50%; /* Border radius for loader */
+  width: 15px; /* Width of loader */
+  height: 15px; /* Height of loader */
+  animation: spin 2s linear infinite; /* Animation for loader spinning */
+}
+
+.pin-icon {
+  vertical-align: middle; /* Vertically align pin icon */
+  margin-right: 5px; /* Margin on the right side of pin icon */
+  color: var(--pin-color); /* Color for pin icon */
+  font-size: 1rem; /* Font size for pin icon */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
+  }
+
+  100% {
+    transform: rotate(360deg); /* Rotate complete 360 degrees */
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    overflow: auto; /* Enable horizontal scrolling for overflowing content on smaller screens */
+  }
+}

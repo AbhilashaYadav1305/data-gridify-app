@@ -1,0 +1,57 @@
+/* Styles for the search input field */
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  font-size: 14px;
+  border: 1px solid var(--primary-color-light);
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+/* Styles for the search box container */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the focused search input */
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color-dark);
+}
+
+/* Styles for the clear icon */
+.clear-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Styles for the search input in dark theme */
+.dark-theme .search-input {
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Styles for the search input in light theme */
+.light-theme .search-input {
+  background-color: var(--primary-color-light);
+  color: var(--text-color-light) !important;
+}
+
+/* Responsive styles for the search input */
+@media screen and (max-width: 600px) {
+  .search-input {
+    font-size: 12px;
+    width: calc(100% - 20px);
+  }
+}
+
+/* Additional responsive styles for the search input */
+@media screen and (max-width: 400px) {
+  .search-input {
+    font-size: 10px;
+    width: calc(100% - 16px);
+  }
+}

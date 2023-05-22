@@ -1,0 +1,17 @@
+.sort-icon {
+  cursor: pointer;
+  margin-left: 4px;
+  font-size: 16px;
+}
+
+.sort-icon:hover {
+  color: var(--primary-color-dark);
+}
+
+.dark-theme .sort-icon {
+  color: var(--primary-color-dark);
+}
+
+.light-theme .search-input {
+  color: var(--primary-color-light);
+}
