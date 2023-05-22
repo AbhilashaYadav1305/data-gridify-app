@@ -27,7 +27,7 @@ The table component is a reusable component that can be easily integrated into a
 
 To use the grid component in your React application, follow these steps:
 
-1. Import the Grid component: `import Grid from './components/Grid';`
+1. Import the Grid component: `import Grid from './components/TableComponent';`
 2. Pass the Grid Config Info and Grid Data as props to the Grid component:
 ```jsx
 <TableComponent
